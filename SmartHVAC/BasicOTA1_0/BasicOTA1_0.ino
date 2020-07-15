@@ -1,3 +1,12 @@
+/*
+ * BasicOTA.ino
+ * 
+ * Enables the NodeMCU to be programed over WiFi.
+ * Currently only capable of local WiFi programing.
+ * 
+ * Last Updated: 07/15/2020
+ */
+
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
 #include <WiFiUdp.h>
