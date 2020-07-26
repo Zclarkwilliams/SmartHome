@@ -1,4 +1,3 @@
-
 /*****************************************************
  * Date: 13 july 2018
  * Written by: Usman Ali Butt
@@ -7,12 +6,14 @@
  
 #include <ESP8266WiFi.h>
 #include <Servo.h>
-Servo servo;
- 
-const char* ssid = "SSID";
-const char* password = "Pwd";  
+#include <Secrets.h>
 
-#define FINSERVO 5; //PWM Gpio pin on nodemcu connected to servo motor
+Servo servo;
+
+const char* ssid = SSID;
+const char* password = SSID_PWD;
+
+#define FINSERVO 5 //PWM Gpio pin on nodemcu connected to servo motor
 
 WiFiServer server(80);
  

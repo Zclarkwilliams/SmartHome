@@ -11,10 +11,11 @@
 #include <ESP8266mDNS.h>
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
+#include <Secrets.h>
 
 #ifndef STASSID
-#define STASSID "SSID"
-#define STAPSK  "PWD"
+#define STASSID SSID
+#define STAPSK  SSID_PWD
 #endif
 
 const char* ssid = STASSID;
